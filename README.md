@@ -8,6 +8,13 @@ This repository is designed as a **portfolio project**: it highlights **data cur
 
 ---
 
+# Why this matters
+- Shows an end-to-end workflow: **raw → curated → baseline model → diagnostics → interpretation**
+- Demonstrates **reproducibility** (Python pipeline + R cross-check)
+- Emphasizes **honest modeling**: recognizing when a feature has no predictive signal is a core DS skill
+
+---
+
 ## Executive summary
 - After curation and deduplication, the dataset is reduced to **one row per compound**.
 - A simple **OLS** regression (`pIC50 ~ AlogP`) shows **near-zero explanatory power** (R² ≈ 0).
@@ -32,7 +39,6 @@ This repository is designed as a **portfolio project**: it highlights **data cur
 ## Repository structure
 - **Main workflow (Python):**
   - Notebooks: `notebooks/`
-  - Scripts: `python/src/`
 - **Raw data:** `data/raw/chembl_CAII_IC50.csv`
 - **Derived data:** `data/processed/ca2_curated.csv` (generated)
 - **Outputs:**
