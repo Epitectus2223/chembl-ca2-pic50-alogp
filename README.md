@@ -17,13 +17,15 @@ This repository is designed as a **portfolio project**: it highlights **data cur
 
 ---
 
-## Key figures (diagnostics — R validation)
+## Key figures 
 
-figures/histograma_R.png
-
-figures/qq_plot_R.png
-
-figures/residuos_vs_valoresajustados_R.png
+<p align="center">
+  <img src="figures/residuos_vs_valoresajustados_R.png" width="650">
+  <br>
+  <img src="figures/qq_plot_R.png" width="650">
+  <br>
+  <img src="figures/histograma_R.png" width="650">
+</p>
 
 ---
 
