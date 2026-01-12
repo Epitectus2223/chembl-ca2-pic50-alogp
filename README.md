@@ -8,13 +8,6 @@ This repository is designed as a **portfolio project**: it highlights **data cur
 
 ---
 
-## Why this matters (for a hiring manager)
-- Demonstrates an end-to-end DS workflow: **raw → curated → baseline model → diagnostics → interpretation**
-- Shows **reproducibility**: a Python-first pipeline plus an **R cross-check**
-- Emphasizes **honest modeling**: recognizing when a feature has little/no predictive signal is a core DS skill
-
----
-
 ## Executive summary
 - After curation and deduplication, the dataset is reduced to **one row per compound**.
 - A simple **OLS** regression (`pIC50 ~ AlogP`) shows **near-zero explanatory power** (R² ≈ 0).
@@ -26,7 +19,7 @@ This repository is designed as a **portfolio project**: it highlights **data cur
 
 ## Key figures (diagnostics — R validation)
 
-![Residuals vs Fitted (R)](figstados_R.png
+figures/residuos_vs_valorajustados_R.png
 figures/qq_plot_R.png
 figures/histograma_R.png
 
