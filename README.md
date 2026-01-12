@@ -27,11 +27,11 @@ This repository is designed as a **portfolio project**: it highlights **data cur
 ## Key figures 
 
 <p align="center">
-  <img src="figures/residuos_vs_valoresajustados_R.png" width="650">
+  <img src="figures/residual_histogram_R.png" width="650">
   <br>
   <img src="figures/qq_plot_R.png" width="650">
   <br>
-  <img src="figures/histograma_R.png" width="650">
+  <img src="figures/residuals_vs_fitted_R.png" width="650">
 </p>
 
 ---
