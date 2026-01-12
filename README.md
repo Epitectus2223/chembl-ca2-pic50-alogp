@@ -70,4 +70,4 @@ If you generate a different export from ChEMBL, make sure the expected columns e
 ---
 
 ## Author
-Osvaldo Hernández Montoya
+M. Osvaldo Hernández Montoya
