@@ -1,25 +1,35 @@
+
 # Modeling pIC50 for Carbonic Anhydrase II (ChEMBL205) using AlogP — an honest baseline
 
-**Goal:** Build a clean, reproducible data science workflow to test whether **AlogP** (lipophilicity) explains inhibitory activity (**pIC50**) for **Carbonic Anhydrase II**.
+**Goal:** Build a clean, reproducible data science workflow to test whether **AlogP** (lipophilicity) explains inhibitory activity (**pIC50**) for **Carbonic Anhydrase II (ChEMBL205)**.
 
-This repo is designed as a **portfolio project**: it highlights **data curation**, a **baseline model**, and **clear interpretation** of results.
+This repository is designed as a **portfolio project**: it highlights **data curation**, a **baseline model**, and **clear interpretation** of results.
 
 📄 Full report (Spanish): `reports/reporte_P1.pdf`
 
 ---
 
-## Executive summary
-- After curation and deduplication, the dataset is reduced to one row per compound.
-- A simple **OLS** regression (`pIC50 ~ AlogP`) shows **near-zero explanatory power** (R² ≈ 0).
-- Diagnostics indicate no major violations of OLS assumptions, but the model has **no practical predictive value**.
+## Why this matters (for a hiring manager)
+- Demonstrates an end-to-end DS workflow: **raw → curated → baseline model → diagnostics → interpretation**
+- Shows **reproducibility**: a Python-first pipeline plus an **R cross-check**
+- Emphasizes **honest modeling**: recognizing when a feature has little/no predictive signal is a core DS skill
 
 ---
 
-## Key figures (diagnostics)
+## Executive summary
+- After curation and deduplication, the dataset is reduced to **one row per compound**.
+- A simple **OLS** regression (`pIC50 ~ AlogP`) shows **near-zero explanatory power** (R² ≈ 0).
+- Diagnostics indicate no major violations of OLS assumptions, but the model has **no practical predictive value**.
 
-![Residuals vs Fitted](figures/residuos_vs_valoresajustados_R.png)
-![Normal Q-Q Plot](figures/qq_plot_R.png)
-![Residuals Histogram](figures/histograma_R.png)
+**Validation note:** R scripts reproduce the same OLS coefficients/metrics as a sanity check for the Python workflow.
+
+---
+
+## Key figures (diagnostics — R validation)
+
+![Residuals vs Fitted (R)](figstados_R.png
+figures/qq_plot_R.png
+figures/histograma_R.png
 
 ---
 
@@ -31,17 +41,19 @@ This repo is designed as a **portfolio project**: it highlights **data curation*
 - **Derived data:** `data/processed/ca2_curated.csv` (generated)
 - **Outputs:**
   - Model: `results/ols_summary.txt`, `results/ols_metrics.csv`, `results/ols_params.csv`
-  - Figures: `figures/residuals_vs_fitted.png`, `figures/qqplot.png`, `figures/residuals_hist.png`
+  - Figures (R diagnostics): `figures/` (see plots above)
 - **Validation (R):** `r/` (cross-check scripts)
 
 ---
 
 ## Quickstart (Python)
+
 Create the conda environment:
 
 ```bash
 conda env create -f python/environment.yml
 conda activate ca2-pic50
+
 ```
 
 Run the pipeline:
@@ -66,7 +78,7 @@ Open and run in order:
 This repository includes the raw CSV export used in the analysis.
 If you generate a different export from ChEMBL, make sure the expected columns exist:
 `Molecule ChEMBL ID`, `Assay Organism`, `pChEMBL Value`, `AlogP`, `Molecular Weight`.
-
+Depending on how you exported from ChEMBL, additional filters (e.g., IC50/nM/relation "=") may have been applied upstream — see the PDF report for the full methodological details.
 ---
 
 ## Author
