@@ -18,9 +18,9 @@ This repository is designed as a **portfolio project**: it highlights **data cur
 ---
 
 ## Key figures (diagnostics — R validation)
-'figures/histograma_R.png'
-'figures/qq_plot_R.png'
-'figures/residuos_vs_valorajustados_R.png'
+figures/histograma_R.png
+figures/qq_plot_R.png'
+figures/residuos_vs_valorajustados_R.png
 
 ---
 
