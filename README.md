@@ -1,4 +1,3 @@
-
 # Modeling pIC50 for Carbonic Anhydrase II (ChEMBL205) using AlogP — an honest baseline
 
 **Goal:** Build a clean, reproducible data science workflow to test whether **AlogP** (lipophilicity) explains inhibitory activity (**pIC50**) for **Carbonic Anhydrase II (ChEMBL205)**.
