@@ -42,26 +42,6 @@ This repository is designed as a **portfolio project**: it highlights **data cur
 
 ---
 
-## Quickstart (Python)
-
-Create the conda environment:
-
-```bash
-conda env create -f python/environment.yml
-conda activate ca2-pic50
-
-```
-
-Run the pipeline:
-
-```bash
-python python/src/01_curate_data.py
-python python/src/02_fit_ols.py
-python python/src/03_diagnostics.py
-```
-
----
-
 ## Notebooks
 Open and run in order:
 1. `notebooks/01_data_curation.ipynb`
