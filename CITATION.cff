@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it."
+title: "Modeling pIC50 for Carbonic Anhydrase II (ChEMBL205) using AlogP"
+authors:
+  - family-names: "Hernández Montoya"
+    given-names: "Osvaldo"
+repository-code: "https://github.com/Epitectus22232/chembl-ca2-pic50-alogp"
+license: "MIT"
