@@ -62,7 +62,7 @@ python python/src/03_diagnostics.py
 
 ---
 
-## Notebooks (recommended for reading)
+## Notebooks
 Open and run in order:
 1. `notebooks/01_data_curation.ipynb`
 2. `notebooks/02_ols_baseline.ipynb`
