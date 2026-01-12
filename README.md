@@ -36,18 +36,6 @@ This repository is designed as a **portfolio project**: it highlights **data cur
 
 ---
 
-## Repository structure
-- **Main workflow (Python):**
-  - Notebooks: `notebooks/`
-- **Raw data:** `data/raw/chembl_CAII_IC50.csv`
-- **Derived data:** `data/processed/ca2_curated.csv` (generated)
-- **Outputs:**
-  - Model: `results/ols_summary.txt`, `results/ols_metrics.csv`, `results/ols_params.csv`
-  - Figures (R diagnostics): `figures/` (see plots above)
-- **Validation (R):** `r/` (cross-check scripts)
-
----
-
 ## Notebooks
 Open and run in order:
 1. `notebooks/01_data_curation.ipynb`
