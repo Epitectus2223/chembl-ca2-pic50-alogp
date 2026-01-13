@@ -4,7 +4,7 @@
 
 This repository is designed as a **portfolio project**: it highlights **data curation**, a **baseline model**, and **clear interpretation** of results.
 
-📄 Full report (Spanish): `reports/reporte_P1.pdf`
+📄 Full report (Spanish): `reports/report.pdf`
 
 ---
 
