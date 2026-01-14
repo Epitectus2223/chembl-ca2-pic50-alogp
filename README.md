@@ -76,7 +76,7 @@ To quantify the relationship between **pIC50** and **AlogP**, this project focus
 
 ### Tools used
 - **Python** for modeling and diagnostics (`pandas`, `statsmodels`, `matplotlib`, `scipy`).
-- **R** for cross-checking the regression fit (via `lm()`).
+- **R** for cross-checking the regression fit (`lm()`, `tidyverse`).
 - **Excel** for an additional sanity check of regression outputs.
 - **ChEMBL** as the bioactivity data source.
 
