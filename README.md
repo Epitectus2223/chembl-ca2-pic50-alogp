@@ -49,19 +49,6 @@ To quantify the relationship between **pIC50** and **AlogP**, this project focus
 
 ---
 
-## Notebooks
-
-- **01 — Data curation and preprocessing**  
-  [`notebooks/01_data_curation.ipynb`](notebooks/01_data_curation.ipynb)  
-
-- **02 — OLS model + baseline framing**  
-  [`notebooks/02_ols_baseline.ipynb`](notebooks/02_ols_baseline.ipynb)  
-  
-- **03 — Diagnostics (residual analysis)**  
-  [`notebooks/03_diagnostics.ipynb`](notebooks/03_diagnostics.ipynb)  
-  
----
-
 ## Key Plots
 
 **Residuals histogram**  
