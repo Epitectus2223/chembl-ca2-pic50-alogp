@@ -19,22 +19,22 @@ To quantify the relationship between **pIC50** and **AlogP**, this project focus
 - **Explanatory power
   - R² = **0.000025** (≈ 0)
   - Adjusted R² = **-0.001823** (negative)
-  - Interpretation: AlogP explains essentially none of the variability in pIC50; the model does not improve over a mean-only baseline.
+  - AlogP explains essentially none of the variability in pIC50; the model does not improve over a mean-only baseline.
 
 - **Statistical significance of the descriptor
   - β(AlogP) = **0.0032**
   - p-value = **0.908**
   - 95% CI = **[-0.051, 0.058]**
-  - Interpretation: there is no statistical evidence that AlogP contributes useful linear signal for predicting pIC50 in this dataset.
+  - There is no statistical evidence that AlogP contributes useful linear signal for predicting pIC50 in this dataset.
 
 - **Prediction error
   - RMSE = **1.286**
-  - Interpretation: the typical error is large, and because fitted values vary very little, the model behaves like a near-constant predictor.
+  - The typical error is large, and because fitted values vary very little, the model behaves like a near-constant predictor.
 
 - **Global model test
   - F-statistic = **0.0135**
   - Prob(F-statistic) = **0.908**
-  - Interpretation: the AlogP model is not better than the null model (intercept-only).
+  - The AlogP model is not better than the null model (intercept-only).
 
 **Overall conclusion:** For this curated CAII dataset, **AlogP alone does not provide predictive value** for pIC50 under a linear model.
 
