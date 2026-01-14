@@ -16,22 +16,22 @@ The dataset used in this project is a table of experimentally measured inhibitor
 
 To quantify the relationship between **pIC50** and **AlogP**, this project focuses on the following metrics:
 
-- **Explanatory power
+- **Explanatory power**
   - R² = **0.000025** (≈ 0)
-  - Adjusted R² = **-0.001823** (negative)
+  - Adjusted R² = **-0.001823**
   - AlogP explains essentially none of the variability in pIC50; the model does not improve over a mean-only baseline.
 
-- **Statistical significance of the descriptor
+- **Statistical significance of the descriptor**
   - β(AlogP) = **0.0032**
   - p-value = **0.908**
   - 95% CI = **[-0.051, 0.058]**
   - There is no statistical evidence that AlogP contributes useful linear signal for predicting pIC50 in this dataset.
 
-- **Prediction error
+- **Prediction error**
   - RMSE = **1.286**
   - The typical error is large, and because fitted values vary very little, the model behaves like a near-constant predictor.
 
-- **Global model test
+- **Global model test**
   - F-statistic = **0.0135**
   - Prob(F-statistic) = **0.908**
   - The AlogP model is not better than the null model (intercept-only).
