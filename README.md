@@ -75,7 +75,7 @@ To quantify the relationship between **pIC50** and **AlogP**, this project focus
   - **1215 → 543** observations after curation.
 
 ### Tools used
-- **Python** for modeling and diagnostics (`pandas`, `statsmodels`, `matplotlib`).
+- **Python** for modeling and diagnostics (`pandas`, `statsmodels`, `matplotlib`, `scipy`).
 - **R** for cross-checking the regression fit (via `lm()`).
 - **Excel** for an additional sanity check of regression outputs.
 - **ChEMBL** as the bioactivity data source.
