@@ -16,22 +16,22 @@ The dataset used in this project is a table of experimentally measured inhibitor
 
 To quantify the relationship between **pIC50** and **AlogP**, this project focuses on the following metrics:
 
-- **Metric 1 — Explanatory power (R² / Adjusted R²)**
+- **Explanatory power
   - R² = **0.000025** (≈ 0)
   - Adjusted R² = **-0.001823** (negative)
   - Interpretation: AlogP explains essentially none of the variability in pIC50; the model does not improve over a mean-only baseline.
 
-- **Metric 2 — Statistical significance of the descriptor (slope, p-value, 95% CI)**
+- **Statistical significance of the descriptor
   - β(AlogP) = **0.0032**
   - p-value = **0.908**
   - 95% CI = **[-0.051, 0.058]**
   - Interpretation: there is no statistical evidence that AlogP contributes useful linear signal for predicting pIC50 in this dataset.
 
-- **Metric 3 — Prediction error (RMSE)**
+- **Prediction error
   - RMSE = **1.286**
   - Interpretation: the typical error is large, and because fitted values vary very little, the model behaves like a near-constant predictor.
 
-- **Metric 4 — Global model test (F-test)**
+- **Global model test
   - F-statistic = **0.0135**
   - Prob(F-statistic) = **0.908**
   - Interpretation: the AlogP model is not better than the null model (intercept-only).
@@ -90,7 +90,7 @@ To quantify the relationship between **pIC50** and **AlogP**, this project focus
   - **1215 → 543** observations after curation.
 
 ### Tools used
-- **Python** for modeling and diagnostics (e.g., `pandas`, `statsmodels`, `matplotlib`).
+- **Python** for modeling and diagnostics (`pandas`, `statsmodels`, `matplotlib`).
 - **R** for cross-checking the regression fit (via `lm()`).
 - **Excel** for an additional sanity check of regression outputs.
 - **ChEMBL** as the bioactivity data source.
