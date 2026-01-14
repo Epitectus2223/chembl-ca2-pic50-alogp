@@ -63,7 +63,7 @@ To quantify the relationship between **pIC50** and **AlogP**, this project focus
 ## Technical process
 
 ### Data treatment and curation
-- Target selection: **Carbonic Anhydrase II (CHEMBL205)**.
+- Target selection: **Carbonic Anhydrase II (ID: CHEMBL205)**.
 - Consistency filters:
   - IC50 in nM
   - relation "=" (no censored values like <, >, ~)
