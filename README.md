@@ -1,5 +1,5 @@
 
-# Modeling human Carbonic Anhydrase II pIC50 using AlogP.
+# Modeling human Carbonic Anhydrase II pIC50 using AlogP
 
 The goal of this project is to model **pIC50** (inhibitory activity) using the molecular descriptor **AlogP**, and to assess whether this model can be used to estimate the inhibitory activity of new compounds.
 
