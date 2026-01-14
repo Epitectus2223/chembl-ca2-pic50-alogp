@@ -49,9 +49,6 @@ To quantify the relationship between **pIC50** and **AlogP**, this project focus
 
 ## Key Plots
 
-**Residuals histogram**  
-![Residuals histogram](figures/residuals_hist.png)
-
 **Normal Q–Q plot (residuals)**  
 ![Q-Q plot](figures/qqplot.png)
 
