@@ -36,8 +36,6 @@ To quantify the relationship between **pIC50** and **AlogP**, this project focus
   - Prob(F-statistic) = **0.908**
   - The AlogP model is not better than the null model (intercept-only).
 
-**Overall conclusion:** For this curated CAII dataset, **AlogP alone does not provide predictive value** for pIC50 under a linear model.
-
 ---
 
 ## Recommendations
