@@ -14,7 +14,7 @@ The dataset used in this project is a table of experimentally measured inhibitor
 
 ## Summary
 
-To quantify the relationship between **pIC50** and **AlogP**, this project uses **simple linear regression (OLS)** and focuses on the following metrics:
+To quantify the relationship between **pIC50** and **AlogP**, this project focuses on the following metrics:
 
 - **Metric 1 — Explanatory power (R² / Adjusted R²)**
   - R² = **0.000025** (≈ 0)
@@ -53,30 +53,16 @@ To quantify the relationship between **pIC50** and **AlogP**, this project uses 
 
 - **01 — Data curation and preprocessing**  
   [`notebooks/01_data_curation.ipynb`](notebooks/01_data_curation.ipynb)  
-  - Source: ChEMBL target **Carbonic Anhydrase II (CHEMBL205)**  
-  - Filters applied for consistency:
-    - Standard type: **IC50**
-    - Standard units: **nM**
-    - Standard relation: **"="** (exclude <, >, ~)
-    - Target organism: **Homo sapiens**
-  - Cleanup: duplicates, inconsistencies, and extreme records removed  
-  - Final dataset: **n = 543** (from 1215 initial observations)
 
 - **02 — OLS model + baseline framing**  
   [`notebooks/02_ols_baseline.ipynb`](notebooks/02_ols_baseline.ipynb)  
-  - OLS fit: `pIC50 ~ AlogP`  
-  - Metrics: β, 95% CI, p-value, R² / Adjusted R², RMSE, F-test  
-  - Interpretation relative to an intercept-only (mean) baseline
-
+  
 - **03 — Diagnostics (residual analysis)**  
   [`notebooks/03_diagnostics.ipynb`](notebooks/03_diagnostics.ipynb)  
-  - Residuals vs fitted values  
-  - Residual histogram  
-  - Q–Q plot
-
+  
 ---
 
-## Plots to share findings with a team in a more "didactic" way
+## Key Plots
 
 **Residuals histogram**  
 ![Residuals histogram](figures/residuals_hist.png)
